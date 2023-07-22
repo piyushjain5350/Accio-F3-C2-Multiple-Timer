@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Timer</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Multiple Timer App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-time">
+                <p>Set Time:</p>
+                <div class="input-timer-container">
+                    <form id="form-input">
+                        <input type="number" name="hour" id="input-time-hour" class="time" placeholder="HH" max="23" maxlength="2">:
+                        <input type="number" name="minute" id="input-time-minute" class="time" placeholder="MM"
+                        max="59" min="0" maxlength="2">:
+                        <input type="number" name="second" id="input-time-second" class="time" placeholder="SS"
+                        max="59"  min="0" maxlength="2">
+                    </form>
+                </div>
+                <input type="button" value="Set" id="input-set-time">
+            </div>
+            <div class="input-text">
+                <p>Current Timers</p>
+            </div>
+            <div class="display-container">
+                <p id="display-no-time">You have no timers Currently!</p>
+
+                <!-- <div class="time-display-container">
+                    <p>Time left:</p>
+                    <div class="time-container">
+                        <div class="hour">00</div>:
+                        <div class="minute">00</div>:
+                        <div class="second">00</div>
+                    </div>
+                    <input type="button" value="delete" id="delete-btn">
+                </div> -->
+            </div>
+        </div>
+        <div style="display: none">
+        <audio src="./sound/openhat.wav" id="alarm-sound"></audio></div>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
